@@ -1,0 +1,411 @@
+.about{
+    &__box{
+        padding-left: 85px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('../img/about_introimg.png');
+        border-radius: 10px;
+    }
+    &__title{
+        margin: 0;
+        margin-bottom: 24px;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FEFCF7;
+    }
+    &__text{
+        width: 445px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FEFCF7;
+    }
+}
+@media screen and (max-width: 770px) {
+    .about{
+        &__box{
+            height: 400px;
+            background-position-x: -200px;
+        }
+    }
+}
+@media screen and (max-width: 689px) {
+    .about{
+        &__title{
+            font-size: 32px;
+        }
+        &__text{
+            width: 389px;
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width: 560px) {
+    .about{
+        &__box{
+            padding-left: 0;
+            align-items: center;
+            background-position: center;
+        }
+        &__title{
+            font-size: 40px;
+        }
+        &__text{
+            text-align: center;
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .about{
+        &__title{
+            font-size: 28px;
+        }
+        &__text{
+            width: 90%;
+            font-size: 15px;
+        }
+    }
+}
+.commitment{
+    &__list{
+        margin: 0 auto;
+        margin-top: 168px;
+        width: 1110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__pic{
+        width: 445px;
+        height: 520px;
+        border-radius: 10px;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        margin-bottom: 32px;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #333D4B;
+    }
+    &__text{
+        width: 540px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333D4B;
+        opacity: 0.8;
+    }
+}
+@media screen and (max-width: 992px) {
+    .commitment {
+        &__list{
+            width: 100%;
+        }
+        &__pic{
+            width: 281px;
+            height: 470px;
+        }
+        &__box{
+            width: 50%;
+        }
+        &__title{
+            margin-bottom: 30px;
+            width: 100%;
+            font-size: 33px;
+        }
+        &__text{
+            width: 100%;
+            font-size: 15px;
+        }
+    } 
+}
+@media screen and (max-width: 689px) {
+    .commitment {
+        &__list-picture{
+            width: 100%;
+            max-width: 541px;
+        }
+        &__title{
+            margin-bottom: 15px;
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+    .commitment{
+        &__title{
+            margin-bottom: 0;
+            font-size: 30px;
+        }
+        &__text{
+            font-size: 14px;
+        }
+        &__pic{
+            width: 240px;
+            height: 420px;
+        }
+    }
+}
+@media screen and (max-width: 560px) {
+    .commitment{
+        
+        &__list{
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__pic{
+            width: 400px;
+            height: 450px;
+        }
+        &__box{
+            width: 90%;
+            align-items: center;
+            text-align: center;
+        }
+        &__title{
+            width: 100%;
+        }
+        &__text{
+            width: 85%;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .commitment{
+        width: 100%;
+        max-width: 327px;
+        &__pic{
+            margin-bottom: 30px;
+            width: 90%;
+            height: 400px;
+        }
+        &__title{
+            font-size: 31px;
+        }
+        &__text{
+            width: 100%;
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width: 327px) {
+    .commitment{
+        &__pic{
+            margin-bottom: 48px;
+            width: 100%;
+        }
+        &__title{
+            font-size: 30px;
+            line-height: 48px;
+        }
+    }
+}
+.quality{
+    &__list{
+        padding-left: 85px;
+        margin-top: 256px;
+        height: 474px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color:#2C343E;
+        border-radius: 10px;
+    }
+    &__title{
+        margin-bottom: 32px;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FEFCF7;
+    }
+    &__text{
+        width: 540px;
+        height: 130px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FEFCF7;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+    &__pic{
+        position: absolute;
+        transform: translateX(730px) translateY(-560px);
+    }
+    &__img{
+        display: none;
+    }
+}
+@media screen and (max-width: 770px) {
+    .quality{
+        &__pic{
+            display: none;
+        }
+        &__img{
+            position: absolute;
+            transform: translateX(25px) translateY(-175px);
+            margin: 0 auto;
+            width: 90%;
+            height: 320px;
+            display: block;
+            background-image: url("/img/black_coffee.png");
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position-y: -260px;
+            border-radius: 15px;
+        }
+        &__list{
+            padding-left: 0;
+            padding-top: 80px;
+            align-items: center;
+        }
+        &__title{
+            width: 100%;
+            text-align: center;
+        }
+        &__text{
+            width: 90%;
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 560px) {
+    .quality{
+        &__img{
+            transform:translateX(18px) translateY(-105px);
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .quality{
+        &__list{
+            height: 550px;
+            padding-top: 0;
+        }
+        &__img{
+            height: 200px;
+            transform:translateX(7px) translateY(-90px);
+            background-position:center;
+        }
+        &__title{
+            font-size: 28px;
+        }
+    }
+}
+.headquarters{
+    &__list{
+        margin: 0 auto;
+        margin-top: 168px;
+        margin-bottom: 168px;
+        width: 1045px;
+    }
+    &__title{
+        margin-bottom: 72px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #83888F;
+    }
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        &--title{
+            margin-bottom: 24px;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 36px;
+            color: #333D4B;
+            &::before{
+                margin-bottom: 46px;
+                display: block;
+                content: '';
+                width: 41px;
+                height: 49px;
+                background-image: url('../img/uk.svg');
+            }
+        }
+        &--text{
+            font-size: 16px;
+            line-height: 26px;
+            color: #333D4B;
+        }
+    }
+    &__item--pic{
+        display: none;
+    }
+}
+.Australia::before{
+    margin-bottom: 46px;
+    display: block;
+    content: '';
+    width: 49px;
+    height: 44px;
+    background-image: url('../img/australia.svg');
+}
+.canada::before{
+    margin-bottom: 46px;
+    display: block;
+    content: '';
+    width: 52px;
+    height: 50px;
+    background-image: url('../img/canada.svg');
+}
+@media screen and (max-width: 770px) {
+    .headquarters{
+        &__list{
+            width: 100%;
+        }
+        &__item{
+            width: 32%;
+        }
+        &__menu{
+            &--title{
+                font-size: 24px;
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
+    .Australia::before{
+        display: none;
+    }
+    .canada::before{
+        display: none;
+    }
+}
+@media screen and (max-width: 560px) {
+    .headquarters{
+        &__title{
+            text-align: center;
+        }
+        &__menu{
+            flex-direction: column;
+            align-items: center;
+            &--title{
+                margin-top: 47px;
+                width: 100%;
+            }
+        }
+        &__item{
+            margin-bottom: 80px;
+            text-align: center;
+            align-items: center;
+            width: 90%;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &--pic{
+                display: inline-block;
+            }
+        }
+    }
+}
